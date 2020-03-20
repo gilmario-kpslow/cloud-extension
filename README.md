@@ -1,0 +1,2 @@
+# Cloud extension for firefox
+
