@@ -1,0 +1,16 @@
+h5 {
+    text-transform: uppercase;
+}
+
+.main {
+    width: 600px;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.form-control {
+    border-radius: 0px !important;
+}
+

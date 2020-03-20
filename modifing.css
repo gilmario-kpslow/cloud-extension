@@ -1,0 +1,33 @@
+.loader {
+    background-color: rgb(131, 162, 248);
+    position: fixed;
+    z-index: 9999;
+    border-radius: 1px;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 10px;
+    font-size: 0px;
+    transition: all ease-in 200ms;
+    text-align: center;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: fall 10s linear infinite, leave 100s ease-in infinite;;
+}
+@keyframes fall {
+    0% {
+        top: -50px;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+@keyframes leave {
+    0% {left: -50px;}
+    50% {left: 50%;}
+    100% {left: 100%;}
+}

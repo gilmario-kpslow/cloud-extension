@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main p-2">
+    <div class="container">
+      <h5 class="text-muted">Limpador de Histórico</h5>
+      <hr/>
+      <div class="row m-3">
+        <div class="col-md-12">
+          <div class="input-group input-group-sm">
+            <input type="text" id="url" class="form-control form-control-sm" placeholder="URL" title="pesquisar url">
+            <div class="input-group-append">
+              <button title="Pesquisar url" class="btn btn-secondary btn-sm" type="button" id="pesquisar"> <img alt="icon" src="/images/search.svg"></img> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-2">
+          <div class="row">
+            <div class="col form-group">
+              <label class="text-muted">Numero de URLs</label>
+              <div class="input-group input-group-sm">
+                <input id="resultado" type="text" readonly class="form-control form-control-sm">
+                <div class="input-group-append">
+                  <button title="Ver links encontrados" class="btn btn-secondary btn-sm" type="button" id="visualizar"> <img alt="icon" src="/images/remove_red_eye.svg"></img></button>
+                  <button title="Apagar links" class="btn btn-danger btn-sm" type="button" id="limpar" disabled> <img alt="icon" src="/images/delete-white.svg"></img></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <ul id="links" class="list-group"></ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

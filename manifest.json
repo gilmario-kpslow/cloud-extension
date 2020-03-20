@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Cloud",
+  "version": "1.0.0",
+
+  "applications": {
+    "gecko": {
+      "id": "gilmario.consta@sefaz.ce.gov.br"
+    }
+  },
+
+  "permissions": [
+  ],  
+
+  "browser_action": {
+    "default_icon": "images/delete.svg",
+    "default_title": "Cloud",
+    "default_popup": "opcoes/index.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["modifing.css"],
+      "js": ["modifing.js"]
+    }
+  ],
+  
+  "web_accessible_resources": [
+    "images/delete.svg",
+    "images/delete-white.svg",
+    "images/remove_red_eye.svg",
+    "images/search.svg"
+  ]
+}
